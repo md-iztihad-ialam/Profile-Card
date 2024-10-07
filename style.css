@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 30vh;
+}
+
+#image{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iztipic{
+    border-radius: 50%;
+}
+
+#background{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 24%, rgba(107,15,43,1) 66%, rgba(59,0,255,1) 100%);
+}
+
+/*main*/
+
+#namebox{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    font-size: 60px;
+}
+
+#name{
+    font-family: 'lato';
+}
+
+/*social media*/
+
+#socialmediabox{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    border-radius: 30px;
+    height: 10px;
+    width: 30px;
+}
+
+a:hover{
+    color: blue;
+}
+
+.social{
+    padding: 10px;
+}
+
+
+
+/*about*/
+
+#aboutbox{
+    display: flex;
+    justify-content: center;
+}
+
+#about{
+    width: 1000px;
+    font-size: 20px;
+    font-family: "lato";
+}
+
+/*button*/
+
+#footer{
+    position: relative;
+    top: 17vh;
+    height: 10vh;
+}
+
+#buttonbox{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#follow{
+    font-size: 25px;
+    padding: 10px 60px 10px 60px;
+    background-color: rgb(211, 44, 72);
+    border-radius: 30px;
+    color: white;
+}
+
+#message{
+    font-size: 25px;
+    padding: 10px 60px 10px 60px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#message:hover{
+    color: blue;
+    background-color: grey;
+}
+
+#follow:hover{
+    color: blue;
+    background-color: grey;
+}
+
+@media screen and (max-width: 450px){
+    #namebox{
+        font-size: 40px;
+    }
+
+    #about{
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #follow{
+        padding: 10px 40px 10px 40px;
+    }
+
+    #message{
+        padding: 10px 40px 10px 40px;
+    }
+
+    #footer{
+        top: 11vh;
+    }
+}

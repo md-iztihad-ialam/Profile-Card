@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 30vh;
+}
+
+#image{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iztipic{
+    border-radius: 50%;
+}
+
+#background{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 24%, rgba(107,15,43,1) 66%, rgba(59,0,255,1) 100%);
+}
+
+/*main*/
+
+#namebox{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    font-size: 60px;
+}
+
+#name{
+    font-family: 'lato';
+}
+
+/*social media*/
+
+#socialmediabox{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    border-radius: 30px;
+    height: 10px;
+    width: 30px;
+}
+
+a:hover{
+    color: blue;
+}
+
+.social{
+    padding: 10px;
+}
+
+
+
+/*about*/
+
+#aboutbox{
+    display: flex;
+    justify-content: center;
+}
+
+#about{
+    width: 1000px;
+    font-size: 20px;
+    font-family: "lato";
+}
+
+/*button*/
+
+#footer{
+    position: relative;
+    top: 17vh;
+    height: 10vh;
+}
+
+#buttonbox{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#follow{
+    font-size: 25px;
+    padding: 10px 60px 10px 60px;
+    background-color: rgb(211, 44, 72);
+    border-radius: 30px;
+    color: white;
+}
+
+#message{
+    font-size: 25px;
+    padding: 10px 60px 10px 60px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#message:hover{
+    color: blue;
+    background-color: grey;
+}
+
+#follow:hover{
+    color: blue;
+    background-color: grey;
+}
+
+@media screen and (max-width: 450px){
+    #namebox{
+        font-size: 40px;
+    }
+
+    #about{
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #follow{
+        padding: 10px 40px 10px 40px;
+    }
+
+    #message{
+        padding: 10px 40px 10px 40px;
+    }
+
+    #footer{
+        top: 11vh;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="background">
+            <div id="image">
+                <img src="iztihad.jpg" alt="" width="150px" id="iztipic">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="namebox">
+            <div id="name">
+                Md. Iztihad Islam
+            </div>
+        </div>
+
+        <div id="socialmediabox">
+            <div id="facebook" class="social">
+                <a href="https://www.facebook.com/md.iztihadislam.5/" target="_blank">Facebook</a>
+            </div>
+
+            <div id="instagram" class="social">
+                <a href="https://www.instagram.com/iztihad_islam/" target="_blank">Instagram</a>
+            </div>
+
+            <div id="x" class="social">
+                <a href="https://x.com/iztihadislam" target="_blank">X</a>
+            </div>
+
+            <div id="linkedin" class="social">
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <div id="aboutbox">
+            <div id="about">
+                I am the CEO of Night-Owl Softwares Ltd. I am leading this corporation since 2024. We have delivered satisfaction to numerous clients around the world. So, if you are looking for softwares, you are at the right persons profile card.
+            </div>
+        </div>
+    </main>
+
+    <div id="footer">
+        <div id="buttonbox">
+            <div id="buttonfollow">
+                <button id="follow">Follow</button>
+            </div>
+            <div id="buttonmessage">
+                <button id="message">Message</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
